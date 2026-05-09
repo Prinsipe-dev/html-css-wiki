@@ -1,1 +1,216 @@
-    git add .
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" href="image/favicon.jpg">
+        <title>What is Coding?</title>
+    </head>
+
+    <body>
+        
+        <h1>What is Coding?</h1>
+        <hr>
+       
+        <p>
+        Coding is the process of writing instructions in a programming language so that a computer can execute specific tasks or solve problems.
+        These instructions, called programs, are translated into machine-readable binary (0s and 1s) that hardware can understand. 
+        It is the foundation of software development, powering everything from mobile apps to artificial intelligence systems.
+        </p>
+
+        <h2>Types of coding languages</h2>    
+        <h3>1. HTML</h3>
+      
+        <p>
+         HTML stands for Hypertext Markup Language. It is the standard markup language used for creating and designing web pages and web applications,
+         HTML defines the structure of web pages by using a variety of elements and tags that tell the browser how to display the content.
+        </p>
+        <hr>
+       
+        <h2>Examples of HTML</h2>
+        <h3>&lt;a href&gt;</h3>
+
+       <!--HREF ATTRIBUTE-->
+
+        <p>
+        The "a href" attribute in HTML is used to create hyperlinks, which are clickable links that navigate to different web pages, files, email addresses, or other resources.
+        an example code of this is as followed.   
+        <br>
+        <a href= "https://youtu.be/ok-plXXHlWw?si=SLeQFIRldr6HZrFE" target="_blank" title="What is html in under 100 seconds.">
+        https://youtu.be/ok-plXXHlWw?si=SLeQFIRldr6HZrFE
+        </a>
+        is the output.
+        </p> 
+
+        <pre>
+        The following code used is:
+
+        &lt;a href="https://youtu.be/ok-plXXHlWw?si=YF_1KzwFNstieJYx" target="_blank" title="What is html in under 100 seconds."&gt;
+        https://youtu.be/ok-plXXHlWw?si=YF_1KzwFNstie   JYx
+        &lt;/a&gt;
+        </pre>
+
+        <!--HREF LINK PIC EMBED-->
+
+        <h3>href link picture embed</h3>
+        <a href="https://youtu.be/ok-plXXHlWw?si=SLeQFIRldr6HZrFE" 
+            target="_blank"
+            title="What is HTML in under 100 seconds.">
+        <img src="image/htmlpicture.avif" width="200" height="100">
+        </a>
+
+        <p>An href link picture embed is a code that directs a link using the source attribute and href attribute</p>
+        <pre>
+        The following code used is =
+
+        &lt;a href="https://youtu.be/ok-plXXHlWw?si=SLeQFIRldr6HZrFE" 
+            target="_blank"
+            title="What is HTML in under 100 seconds."&gt;
+        &lt;video src="img/htmlpicture.avif" width="200" height="100"&gt;
+        &lt;/video&gt; 
+        &lt;/a&gt;
+        </pre>
+
+        <!--HREF LINK VID EMBED-->
+
+         <h3>href link video embed</h3>
+        <a href="https://youtu.be/ok-plXXHlWw?si=SLeQFIRldr6HZrFE" 
+            target="_blank"
+            title="What is HTML in under 100 seconds.">
+            <video src ="image/5sec.mp4"
+            width="200"
+            height="100"
+            loop
+            autoplay>
+            </video>
+        </a>     
+
+        <p>An href link video embed is a code that directs a link using the source attribute and href attribute</p>
+     
+        <pre>
+        The following code used is:
+
+        &lt;a href="https://youtu.be/ok-plXXHlWw?si=SLeQFIRldr6HZrFE" 
+            target="_blank"
+            title="What is HTML in under 100 seconds."&gt;
+        &lt;video src ="image/5sec.mp4"
+            width="200"
+            height="100"
+            loop
+            autoplay&gt;
+        &lt;/video&gt;
+        &lt;/a&gt;     
+        </pre>
+        
+        <!--AUDIO-->
+
+        <h3> Audio </h3>
+        <audio controls autoplay muted loop>
+            <source src="music/Golden - Vibe Tracks copy.mp3" type="audio/mpeg">
+            <source src="music/Golden - Vibe Tracks copy.wav" type="audio/wav">
+        </audio>
+
+        <p>The audio tag is used to embed sound content in a webpage, such as music or sound effects. It supports multiple file formats and can be controlled using attributes such as controls, autoplay, muted, and loop.</p>
+        
+        <pre>
+        The following code used is:
+
+        &lt;audio controls autoplay loop&gt;
+            &lt;source src="music/Golden - Vibe Tracks copy.mp3"&gt;
+        &lt;/audio&gt;
+        </pre>
+
+        <p>In the event that your first audio file fails to load, you can provide a backup file by adding a second source tag with a different file format, such as WAV. The browser will automatically resort to the next available source.</p>
+        
+        <pre>
+        &lt;audio controls autoplay muted loop&gt;
+            &lt;source src="music/Golden - Vibe Tracks copy.mp3" type="audio/mpeg"&gt;
+            &lt;source src="music/Golden - Vibe Tracks copy.wav" type="audio/wav"&gt;
+        &lt;/audio>
+        </pre>
+
+        <!--PRE TAG-->
+
+        <h3>&lt;pre&gt;</h3>
+        
+        <pre>
+        The &lt;pre&gt; tag displays the text as it is on how you formatted it, like how this text is created 
+        right now. You can choose its spacing without using the code &lt;br&gt;, but it is not 
+        recommended to use entirely because it will be a hassle to adjust using CSS later on.
+        </pre>
+
+        <!--FAVICON TAG-->
+
+        <h3>Favicon</h3>
+        
+        <p>A favicon is a small icon that represents your webpage, typically displayed on the browser tab. It is defined in the head section of your code.</p>
+        <p>To use a favicon, you need an image that is at least 96 by 96 pixels. You can resize your image using any image editor such as Paint.</p>
+        <p>A favicon is created using the &lt;link&gt;  tag with the rel, type, and href attributes as follows.</p>
+        
+        <pre>
+        link rel="icon" type="image/jpg" href="image/favicon.jpg"&gt;   
+        </pre>
+
+        <!--TEXT FORMATS-->
+
+        <h3>Text Formatting</h3>
+
+        <p>There are different ways to format text in HTML using tags such as &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;del&gt;, &lt;big&gt;, &lt;small&gt;, &lt;sub&gt;, &lt;superscript&gt;, &lt;tt&gt;, &lt;mark&gt;.</p>
+        <p>These formatting tags can be applied to individual words, phrases, or the entire text content. Examples are shown below.</p>
+        <p>This is a normal text</p>
+        <p>This is a <b>normal</b> text</p>
+        <p>This is a <i>normal</i> text</p>
+        <p>This is a <u>normal</u> text</p>
+        <p>This is a <del>normal</del> text</p>
+        <p>This is a <big>normal</big> text</p>
+        <p>This is a <small>normal</small> text</p>
+        <p>This is a <sub>normal</sub> text</p>
+        <p>This is a <sup>normal</sup> text</p>
+        <p>This is a <tt>normal</tt> text</p>
+        <p>This is a <mark>normal</mark> text</p>
+        <p>This is a <mark style="background-color:lightblue">normal</mark> text</p>
+
+        <pre>
+        Formatting Tags and Examples
+
+        &lt;b&gt;      - <b>bold</b>
+        &lt;i&gt;      - <i>italic</i>
+        &lt;u&gt;      - <u>underline</u>
+        &lt;del&gt;    - <del>strikethrough</del>
+        &lt;big&gt;    - <big>big text</big>
+        &lt;small&gt;  - <small>small text</small>
+        &lt;sub&gt;    - <sub>subscript</sub>
+        &lt;sup&gt;    - <sup>supscript</sup>
+        &lt;tt&gt;     - <tt>monospace</tt>
+        &lt;mark&gt;   - <mark>highlighted</mark>
+        &lt;mark style="background-color:lightblue"&gt; - This is a <mark style="background-color:lightblue">normal</mark> text
+        </pre>
+        
+        <!--SPAN AND DIV TAGS-->
+
+        <h3>&lt;span&gt; and &lt;div&gt; tags</h3>
+        
+        <p>The &lt;span&gt; and &lt;div&gt; tags are mainly used for styling with CSS. </p>
+        <p>The &lt;div&gt; tag is a block container that takes up the entire width of the page, like a shelf. </p>
+        <p>The &lt;span&gt; tag is an inline container that is only as big as the text inside it, like a sticky note. Both tags can be applied to individual words, phrases, or entire sections. Below are some examples.</p>
+        
+        <h1><span style="background-color:tomato">I am a span tag.</span></h1>
+        <h1><div style="background-color:cyan">I am a span tag</div></h1>
+
+        <p><span style="background-color:tomato">I am a span tag.</span></p>
+        <p><div style="background-color:cyan">I am a span tag</div></p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="background-color:tomato">Eos, ea! Officiis iure similique expedita voluptatum consectetur, impedit asperiores! Minima autem, consectetur ipsum maxime voluptas sed est tempora dolorum iste cumque!</span></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <div style="background-color:cyan">Doloribus beatae ducimus labore ipsam, minus dolores delectus vel voluptatem eveniet, blanditiis similique rem nihil dolore cum vero facilis cupiditate. In, reiciendis.</div></p>
+
+        <pre>
+        The following code used is =
+
+        &lt;span style="background-color:tomato"&gt;I am a span tag.&lt;/span&gt;
+
+        &lt;div style="background-color:cyan"&gt;I am a div tag.&lt;/div&gt;
+        </pre>
+
+
+    </body>
+    </html>
