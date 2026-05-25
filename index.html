@@ -1,5 +1,4 @@
-
-vbn.mmmmmmmm000000000000000000000000000000000000000000000mmmmmmmmmmmmmmmmmmMMMMMMMMMMMMMMMMMMMMMMMMM    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -290,7 +289,127 @@ vbn.mmmmmmmm000000000000000000000000000000000000000000000mmmmmmmmmmmmmmmmmmMMMMM
         &lt;/dl&gt;
         </pre>
 
+        <h3>Table</h3>
+        <p>The &lt;table&gt; tag is used to create a table in HTML. A table is made up of rows and columns.</p> 
+        <p>The &lt;tr&gt; tag defines a table row, the &lt;th&gt; tag defines a table header cell which is bold and centered by default, and the &lt;td&gt; tag defines a standard table data cell.</p>
+   
+        <table border="3">
+            <tr align="center" style="background-color: skyblue;">
+                <th width="100" height="35">Monday</th>
+                <th width="100" height="35">Tuesday</th>
+                <th width="100" height="35">Wednesday</th>
+                <th width="100" height="35">Thursday</th>
+                <th width="100" height="35">Friday</th>
+                <th width="100" height="35">Saturday</th>
+                <th width="100" height="35">Sunday</th>
+            </tr>
+            <tr align="center" style="background-color: lightblue;">
+                <td>Open</td>
+                <td>Open</td>
+                <td>Close</td>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Close</td>
+                <td>Close</td>
+            </tr>
+        </table>
+   
+          
+        <pre>
+        The following code used is:
 
+        &lt;table border="3"&gt;
+            &lt;tr align="center" style="background-color: skyblue;"&gt;
+                &lt;th width="100" height="35"&gt;Monday&lt;/th&gt;
+                &lt;th width="100" height="35"&gt;Tuesday&lt;/th&gt;
+                &lt;th width="100" height="35"&gt;Wednesday&lt;/th&gt;
+                &lt;th width="100" height="35"&gt;Thursday&lt;/th&gt;
+                &lt;th width="100" height="35"&gt;Friday&lt;/th&gt;
+                &lt;th width="100" height="35"&gt;Saturday&lt;/th&gt;
+                &lt;th width="100" height="35"&gt;Sunday&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr align="center" style="background-color: lightblue;"&gt;
+                &lt;td&gt;Open&lt;/td&gt;
+                &lt;td&gt;Open&lt;/td&gt;
+                &lt;td&gt;Close&lt;/td&gt;
+                &lt;td&gt;Open&lt;/td&gt;
+                &lt;td&gt;Open&lt;/td&gt;
+                &lt;td&gt;Close&lt;/td&gt;
+                &lt;td&gt;Close&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        </pre>
+        
+        <h3>Button</h3>
+        <p>The &lt;button&gt; tag is used to create a clickable button in HTML. A button can contain text or other elements and can be used to trigger actions on a webpage.</p>
+        <p>On its own, a button does nothing without JavaScript, but it can be styled using CSS and given functionality using JavaScript later on.</p>
+
+        <h4>This is a button created using href attribute.</h4>
+
+        <a href="https://youtu.be/HGTJBPNC-Gw?si=7jzHDOIcJ99b5CNp" target="_blank">
+        <button style="font-size: 25px; background-color: gray; color:beige; border-radius: 25px;">
+            Click Here
+        </button>
+        </a>
+
+        <pre>
+        Button that opens a YouTube link:
+
+        &lt;a href="https://youtu.be/HGTJBPNC-Gw?si=7jzHDOIcJ99b5CNp" target="_blank"&gt;
+            &lt;button style="font-size: 25px; background-color: gray; color:beige; border-radius: 25px;"&gt;
+                Click Here
+            &lt;/button&gt;
+        &lt;/a&gt;  
+        </pre>
+
+        <h4>This is another button created using href attribute and redirects to a new website</h4> 
+
+        <a href="page2.html" target="_blank">
+        <button style="font-size: 25px; background-color: gray; color:beige; border-radius: 25px;">
+            Click Here
+        </button>
+        </a>
+
+       <pre>
+        Button that redirects to another page:
+
+        &lt;a href="page2.html" target="_blank"&gt;
+            &lt;button style="font-size: 25px; background-color: gray; color:beige; border-radius: 25px;"&gt;
+                Click Here
+            &lt;/button&gt;
+        &lt;/a&gt;
+        </pre>
+
+        <h4>This is a button created by a simple JavaScript being able to change text.</h4> 
+        
+        <button onclick="changeText()" style="font-size: 25px; background-color: gray; color:beige; border-radius: 25px;">Hey</button>
+        
+        <p id="Surprisegreet">Hello</p>
+
+        <pre>
+        Button that changes text using JavaScript:
+
+        &lt;button onclick="changeText()" style="font-size: 25px; background-color: gray; color:beige; border-radius: 25px;"&gt;Hey&lt;/button&gt;
+
+        &lt;p id="Surprisegreet"&gt;Hello&lt;/p&gt;
+
+        &lt;script&gt;
+            function changeText(){
+                document.getElementById("Surprisegreet").innerHTML = "Boo!";
+            }
+        &lt;/script&gt;
+        </pre>
+
+
+
+
+
+
+        <script>
+            function changeText(){
+                document.getElementById("Surprisegreet").innerHTML = "Boo!";
+            }
+        </script>
 
     </body>
     </html>
