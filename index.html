@@ -400,16 +400,99 @@
         &lt;/script&gt;
         </pre>
 
+        <h3>Forms></h3>
+        <p>The &lt;form&gt; tag is used to collect user input in HTML.</p>
+        <p>A form contains different types of input fields such as text fields, checkboxes, radio buttons, and submit buttons.</p>
+        <p>The data entered in a form can be sent to a server for processing.</p>
+        <p>Forms are commonly used for login pages, sign up pages, and contact forms.</p>
+
+        <form action="index.php" method="Post">
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Jacob" minlength="6" maxlength="15" required><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" minlength="6" maxlength="15" required><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Jacobpogi@gmail.com" minlength="6" maxlength="30" required><br>
+
+            <label for="phone">Phone Num#</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+
+            <label for="bday">Birthdate</label>
+            <input type="date" id="bday"><br>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" min="0" max="99" value="1"><br>
+
+            <label for="title">Title:</label>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." value="Mr." name="choice">
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." value="Mrs." name="choice"></label>
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." value="PhD." name="choice"></label><br>
 
 
+            <input type="submit" style="font-size: large;">
+            <input type="reset" style="font-size: large;">
 
+        </form>
 
+        <pre>
+        The following code used is:
+
+        &lt;form action="index.php" method="post"&gt;
+
+            &lt;!-- Text Input --&gt;
+            &lt;label for="username"&gt;Username&lt;/label&gt;
+            &lt;input type="text" id="username" placeholder="Jacob" minlength="6" maxlength="15" required&gt;&lt;br&gt;
+
+            &lt;!-- Password Input --&gt;
+            &lt;label for="password"&gt;Password&lt;/label&gt;
+            &lt;input type="password" id="password" minlength="6" maxlength="15" required&gt;&lt;br&gt;
+
+            &lt;!-- Email Input --&gt;
+            &lt;label for="email"&gt;Email&lt;/label&gt;
+            &lt;input type="email" id="email" placeholder="Jacobpogi@gmail.com" minlength="6" maxlength="30" required&gt;&lt;br&gt;
+
+            &lt;!-- Phone Input --&gt;
+            &lt;label for="phone"&gt;Phone Num#&lt;/label&gt;
+            &lt;input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"&gt;&lt;br&gt;
+
+            &lt;!-- Date Input --&gt;
+            &lt;label for="bday"&gt;Birthdate&lt;/label&gt;
+            &lt;input type="date" id="bday"&gt;&lt;br&gt;
+
+            &lt;!-- Number Input --&gt;
+            &lt;label for="quantity"&gt;Quantity&lt;/label&gt;
+            &lt;input type="number" id="quantity" min="0" max="99" value="1"&gt;&lt;br&gt;
+
+            &lt;!-- Radio Buttons --&gt;
+            &lt;label&gt;Title:&lt;/label&gt;
+            &lt;label for="Mr."&gt;Mr.&lt;/label&gt;
+            &lt;input type="radio" id="Mr." value="Mr." name="choice"&gt;
+            &lt;label for="Mrs."&gt;Mrs.&lt;/label&gt;
+            &lt;input type="radio" id="Mrs." value="Mrs." name="choice"&gt;
+            &lt;label for="PhD."&gt;PhD.&lt;/label&gt;
+            &lt;input type="radio" id="PhD." value="PhD." name="choice"&gt;&lt;br&gt;
+
+            &lt;!-- Submit and Reset --&gt;
+            &lt;input type="submit" style="font-size: large;"&gt;
+            &lt;input type="reset" style="font-size: large;"&gt;
+
+        &lt;/form&gt;
+        </pre>
 
         <script>
             function changeText(){
                 document.getElementById("Surprisegreet").innerHTML = "Boo!";
             }
         </script>
+
+        
 
     </body>
     </html>
